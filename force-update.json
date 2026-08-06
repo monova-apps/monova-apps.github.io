@@ -1,5 +1,10 @@
-{"telescope100x.zoom.camera": {
-  "version_less_than": "2.3",
-  "update": true
-}
+{
+  "telescope100x.zoom.camera": {
+    "version_less_than": "2.3",
+    "update": true
+  },
+  "reze.microscope.zoomcamera": {
+    "version_less_than": "2.3",
+    "update": true
+  }
 }
