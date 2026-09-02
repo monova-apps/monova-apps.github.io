@@ -6,5 +6,9 @@
   "reze.microscope.zoomcamera": {
     "version_less_than": "2.3",
     "update": true
+  },
+  "com.rahul.gta.sanandreas.cheat.codes.menu": { 
+    "version_less_than": "1.7",
+    "update": true
   }
 }
