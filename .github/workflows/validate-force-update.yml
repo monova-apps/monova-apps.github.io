@@ -1,0 +1,58 @@
+name: Validate force-update.json
+
+on:
+  push:
+    paths:
+      - 'force-update.json'
+      - '.github/workflows/validate-force-update.yml'
+  pull_request:
+    paths:
+      - 'force-update.json'
+      - '.github/workflows/validate-force-update.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Parse force-update.json
+        run: |
+          python3 - <<'PY'
+          import json, sys
+
+          path = "force-update.json"
+          try:
+              with open(path, encoding="utf-8") as f:
+                  data = json.load(f)
+          except json.JSONDecodeError as e:
+              print(f"::error file={path},line={e.lineno},col={e.colno}::Invalid JSON: {e.msg}")
+              sys.exit(1)
+
+          if not isinstance(data, dict):
+              print(f"::error file={path}::Top level must be an object keyed by applicationId")
+              sys.exit(1)
+
+          failed = False
+          for pkg, entry in data.items():
+              if not isinstance(entry, dict):
+                  print(f"::error file={path}::'{pkg}' must map to an object")
+                  failed = True
+                  continue
+              if not isinstance(entry.get("update"), bool):
+                  print(f"::error file={path}::'{pkg}' is missing a boolean \"update\"")
+                  failed = True
+              version = entry.get("version_less_than")
+              if not isinstance(version, str) or not version.strip():
+                  print(f"::error file={path}::'{pkg}' is missing a non-empty \"version_less_than\" string")
+                  failed = True
+              elif not all(part.strip().isdigit() for part in version.split(".")):
+                  print(f"::error file={path}::'{pkg}' has a non-numeric version_less_than: {version!r}")
+                  failed = True
+
+          if failed:
+              sys.exit(1)
+
+          print(f"OK: {path} is valid JSON with {len(data)} entries")
+          PY
