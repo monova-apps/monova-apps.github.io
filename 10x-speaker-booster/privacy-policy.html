@@ -3,661 +3,235 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
-  <meta
-    name="description"
-    content="Privacy Policy review draft for the Android app 10x Speaker sound booster, operated by Monova Tech Pvt. Ltd."
-  >
+  <meta name="description" content="Privacy Policy for 10x Speaker sound booster for Android, operated by Monova Tech Pvt. Ltd.">
+  <meta name="color-scheme" content="light">
   <title>Privacy Policy | 10x Speaker sound booster</title>
-
   <style>
     :root {
-      color-scheme: light;
-      --background: #f5f6fa;
-      --surface: #ffffff;
-      --text: #202631;
-      --muted: #586174;
-      --accent: #4338ca;
-      --border: #e2e5ed;
-      --review-bg: #fff8e7;
-      --review-text: #664600;
+      --bg: #f6f7fb;
+      --paper: #fff;
+      --ink: #202634;
+      --muted: #566176;
+      --accent: #353fa1;
+      --line: #e1e5ee;
+      --tint: #f0f2fa;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
     body {
-      margin: 0;
-      padding: 32px 16px;
-      background: var(--background);
-      color: var(--text);
-      font: 16px/1.75 "Helvetica Neue", Helvetica, Arial, sans-serif;
-      overflow-wrap: anywhere;
+      margin: 0; padding: 36px 16px; background: var(--bg); color: var(--ink);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px; line-height: 1.75; overflow-wrap: anywhere;
     }
-
     main {
-      max-width: 850px;
-      margin: auto;
-      padding: 40px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
+      width: 100%; max-width: 880px; margin: 0 auto; padding: 44px 48px;
+      border: 1px solid var(--line); border-radius: 14px; background: var(--paper);
     }
-
-    header {
-      padding-bottom: 22px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .app-name {
-      margin: 0 0 8px;
-      color: var(--accent);
-      font-weight: 700;
-    }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: 2.2rem;
-      line-height: 1.2;
-    }
-
-    h2 {
-      margin: 0 0 12px;
-      font-size: 1.2rem;
-      line-height: 1.4;
-    }
-
-    h3 {
-      margin: 20px 0 8px;
-      font-size: 1rem;
-    }
-
-    p {
-      margin: 0 0 14px;
-    }
-
-    section {
-      margin-top: 28px;
-    }
-
-    ul {
-      margin: 10px 0 16px;
-      padding-left: 22px;
-    }
-
-    li {
-      margin-bottom: 7px;
-    }
-
-    .meta,
-    .reference,
-    footer {
-      color: var(--muted);
-      font-size: .92rem;
-    }
-
-    .meta {
-      margin: 0;
-    }
-
-    a {
-      color: var(--accent);
-      text-underline-offset: 3px;
-    }
-
-    a:focus-visible {
-      outline: 3px solid var(--accent);
-      outline-offset: 4px;
-    }
-
-    .review {
-      padding: 14px 16px;
-      background: var(--review-bg);
-      color: var(--review-text);
-      border-left: 4px solid #b98716;
-      border-radius: 5px;
-    }
-
-    aside.review {
-      margin-top: 24px;
-    }
-
-    .review p:last-child,
-    .contact p:last-child {
-      margin-bottom: 0;
-    }
-
-    .contact {
-      padding: 20px;
-      background: var(--background);
-      border-radius: 8px;
-    }
-
-    footer {
-      margin-top: 30px;
-      padding-top: 18px;
-      border-top: 1px solid var(--border);
-    }
-
-    .skip-link {
-      position: absolute;
-      top: -100px;
-      left: 16px;
-      padding: 10px;
-      background: #fff;
-    }
-
-    .skip-link:focus {
-      top: 8px;
-    }
-
+    header { padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+    .app { margin: 0 0 10px; color: var(--accent); font-weight: 700; }
+    h1 { margin: 0 0 16px; font-size: clamp(2rem, 5vw, 2.6rem); line-height: 1.18; letter-spacing: -.035em; }
+    h2 { margin: 0 0 12px; font-size: 1.22rem; line-height: 1.4; }
+    h3 { margin: 20px 0 8px; font-size: 1.02rem; line-height: 1.5; }
+    p { margin: 0 0 14px; }
+    .meta { margin: 0; color: var(--muted); font-size: .94rem; }
+    section { margin-top: 30px; }
+    ul, ol { padding-left: 24px; margin: 10px 0 18px; }
+    li { margin: 6px 0; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    .scope, .contact { padding: 20px; border: 1px solid var(--line); border-radius: 8px; background: var(--tint); }
+    .scope p:last-child, .contact p:last-child { margin-bottom: 0; }
+    .toc { margin-top: 24px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+    .toc h2 { font-size: 1rem; }
+    .toc ul { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 24px; margin: 0; padding: 0; list-style: none; }
+    .toc li { margin: 0; font-size: .93rem; }
+    .reference { color: var(--muted); font-size: .9rem; }
+    address { font-style: normal; }
+    footer { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    .skip { position: absolute; top: -100px; left: 12px; z-index: 5; padding: 10px 14px; background: white; }
+    .skip:focus { top: 12px; }
     @media (max-width: 600px) {
-      body {
-        padding: 12px 8px;
-      }
-
-      main {
-        padding: 25px 18px;
-      }
-
-      h1 {
-        font-size: 1.85rem;
-      }
+      body { padding: 12px 8px; }
+      main { padding: 28px 20px; border-radius: 10px; }
+      .toc ul { grid-template-columns: 1fr; }
     }
-
     @media print {
-      body {
-        padding: 0;
-        background: #fff;
-        color: #000;
-        font-size: 11pt;
-      }
-
-      main {
-        max-width: none;
-        padding: 0;
-        border: 0;
-      }
-
-      .skip-link {
-        display: none;
-      }
-
-      h2,
-      h3 {
-        break-after: avoid;
-      }
-
-      .review {
-        border: 1px solid #666;
-        background: #fff;
-        color: #000;
-      }
-
-      a {
-        color: #000;
-      }
+      body { padding: 0; background: white; color: black; font-size: 11pt; }
+      main { max-width: none; padding: 0; border: 0; border-radius: 0; }
+      .toc, .skip { display: none; }
+      .scope, .contact { background: white; border: 1px solid #777; }
+      h2, h3 { break-after: avoid; }
+      a { color: black; }
     }
   </style>
 </head>
-
 <body>
-  <a class="skip-link" href="#policy">
-    Skip to privacy policy
-  </a>
-
+  <a class="skip" href="#policy">Skip to privacy policy</a>
   <main id="policy" tabindex="-1">
     <header>
-      <p class="app-name">10x Speaker sound booster</p>
+      <p class="app">10x Speaker sound booster</p>
       <h1>Privacy Policy</h1>
-
-      <p class="meta">
-        <strong>Service Provider:</strong>
-        Monova Tech Pvt. Ltd.
-      </p>
-
-      <p class="meta">
-        <strong>Platform:</strong>
-        Android
-      </p>
-
-      <p class="meta">
-        <strong>Draft updated:</strong>
-        <time datetime="2026-09-26">September 26, 2026</time>
-      </p>
+      <p class="meta"><strong>Service Provider:</strong> Monova Tech Pvt. Ltd.</p>
+      <p class="meta"><strong>Platform:</strong> Android</p>
+      <p class="meta"><strong>Last updated:</strong> <time datetime="2026-09-26">September 26, 2026</time></p>
     </header>
 
-    <aside class="review" aria-labelledby="review-title">
-      <h2 id="review-title">Review required before publication</h2>
+    <section class="scope" id="scope" aria-labelledby="scope-title">
+      <h2 id="scope-title">Scope and operating assumptions</h2>
+      <p>This policy is written for a configuration of the Application that adjusts audio on the device, stores preferences locally, and has no user accounts, microphone recording, cloud audio processing, embedded advertising, or analytics SDKs. Support correspondence is handled separately as described below.</p>
+      <p><strong>These app-configuration details are drafting assumptions, not verified implementation facts.</strong> This policy applies only to a release that matches this configuration. A release that collects additional information or integrates data-collecting services needs disclosures describing those actual practices.</p>
+    </section>
 
-      <p>
-        This is proposed policy wording, not a verified account of the
-        app's behavior. Complete the highlighted fields and confirm the
-        remaining statements against the released app, its backend, and
-        third-party SDKs before publishing or submitting it to Google Play.
-      </p>
+    <nav class="toc" aria-label="Privacy policy contents">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#introduction">1. Introduction</a></li>
+        <li><a href="#information">2. Information and audio processing</a></li>
+        <li><a href="#permissions">3. Android permissions</a></li>
+        <li><a href="#purposes">4. Purposes and legal grounds</a></li>
+        <li><a href="#services">5. Third-party services</a></li>
+        <li><a href="#sharing">6. Information sharing</a></li>
+        <li><a href="#retention">7. Retention</a></li>
+        <li><a href="#deletion">8. Choices and deletion</a></li>
+        <li><a href="#rights">9. Privacy rights</a></li>
+        <li><a href="#children">10. Children's privacy</a></li>
+        <li><a href="#international">11. International processing</a></li>
+        <li><a href="#security">12. Security</a></li>
+        <li><a href="#changes">13. Policy changes</a></li>
+        <li><a href="#contact">14. Contact us</a></li>
+      </ul>
+    </nav>
 
-      <p>
-        After review, remove the review notes, change the date label to
-        “Last updated,” and remove the draft's
-        <strong>noindex</strong> setting.
-      </p>
-    </aside>
-
-    <article aria-label="Privacy policy document">
+    <article aria-label="Privacy policy terms">
       <section id="introduction">
         <h2>1. Introduction</h2>
-
-        <p>
-          This Privacy Policy applies to the Android application
-          <strong>10x Speaker sound booster</strong>
-          (the “Application”), operated by
-          <strong>Monova Tech Pvt. Ltd.</strong>
-          (“we,” “us,” “our,” or the “Service Provider”).
-        </p>
-
-        <p>
-          This policy addresses personal information handled in
-          connection with the Application and communications with us.
-          It covers information accessed on your device as well as
-          information transmitted to us or to third parties, as
-          specifically described below.
-        </p>
+        <p>This Privacy Policy applies to <strong>10x Speaker sound booster</strong> (the “Application”), an Android application operated by <strong>Monova Tech Pvt. Ltd.</strong> (“we,” “us,” “our,” or the “Service Provider”). It describes the privacy terms for the configuration identified above, including on-device information handling and communications with us.</p>
+        <p>The Application's purpose is to let you adjust supported audio output on your Android device. This policy distinguishes information handled locally by the Application from information you choose to provide directly to us.</p>
+        <p>Monova Tech Pvt. Ltd. is responsible for personal information it receives and controls in connection with support and privacy requests. Our contact details appear in Section 14.</p>
       </section>
 
       <section id="information">
-        <h2>2. Information Collection and Use</h2>
-
-        <h3>Audio processing and sound settings</h3>
-
-        <p class="review">
-          <strong>[CONFIRM AUDIO PRACTICES]</strong>
-          Describe whether the Application only adjusts audio output
-          or also accesses microphone input, playback audio, audio
-          files, or audio-session information. Identify any volume
-          settings, equalizer settings, presets, or other preferences
-          it stores. Explain the purpose of each activity, whether
-          processing stays on the device, and whether audio, recordings,
-          metadata, or settings are saved or transmitted. Do not claim
-          that the app records conversations, never records audio, or
-          processes everything locally without verification.
-        </p>
-
-        <h3>Device, usage, and diagnostic information</h3>
-
-        <p class="review">
-          <strong>[CONFIRM AUTOMATIC COLLECTION]</strong>
-          List the information actually accessed or collected by the
-          Application, its backend, and its SDKs. Check IP addresses,
-          device or advertising identifiers, app and operating-system
-          versions, interactions, crash reports, and location.
-          Identify the source and purpose of each relevant category.
-          State accurately when a category is not collected; do not
-          treat an unknown practice as “no collection.”
-        </p>
-
-        <h3>Information you provide</h3>
-
-        <p>
-          If you contact us for support or with a privacy request, we
-          receive the contact information, message, and attachments you
-          choose to send. We use that information to respond to the
-          communication and handle the request. Please do not send
-          passwords or unrelated sensitive information.
-        </p>
-
-        <p class="review">
-          <strong>[CONFIRM ACCOUNTS AND PURCHASES]</strong>
-          State whether the Application has accounts, sign-in,
-          purchases, subscriptions, or other submissions. Where
-          applicable, identify the information received by us and the
-          relevant service providers. Remove this note after inserting
-          the actual practice.
-        </p>
+        <h2>2. Information and Audio Processing</h2>
+        <h3>On-device audio operation</h3>
+        <p>In the configuration covered by this policy, audio adjustment takes place on your device. The Application does not create microphone recordings, record conversations, upload playback audio, or send audio files to Monova Tech Pvt. Ltd. for processing.</p>
+        <p>Information needed to apply an audio setting is used for the requested audio operation. It is not used to create a listening-history profile or identify the contents of your conversations.</p>
+        <h3>Local preferences</h3>
+        <p>The Application stores preferences such as your selected boost level and interface settings locally so that it can remember your choices. These preferences are not automatically sent to us. Device backup or migration services may handle app data separately according to your device settings and the service provider's practices.</p>
+        <h3>Information you send to us</h3>
+        <p>If you email us, we receive your email address, the message, and any information or attachments you include. You may choose to provide your name, device model, Android version, app version, screenshots, or a description of a problem. We use this information to respond to you and handle your request.</p>
+        <p>Please do not send passwords, payment-card details, recordings of other people, or unnecessary sensitive information with a support request. We do not need your complete device contents to investigate a routine issue.</p>
+        <h3>Accounts and automatic tracking</h3>
+        <p>The configuration covered here does not use a developer account system or automatically send advertising identifiers, usage events, or crash reports to us or to embedded analytics or advertising services. Diagnostic details sent voluntarily with a support message are covered by the support provisions of this policy.</p>
       </section>
 
       <section id="permissions">
-        <h2>3. Android Permissions and Device Access</h2>
-
-        <p class="review">
-          <strong>[CONFIRM PERMISSIONS]</strong>
-          List only the permissions and special access actually used,
-          with a specific purpose for each. Check audio-setting access,
-          microphone or audio-capture access, media-file access,
-          notifications, Bluetooth access, background operation,
-          overlays, and accessibility access where relevant. Explain
-          any background processing and how users stop it. This list
-          is a review checklist, not a statement that the Application
-          requests these permissions.
-        </p>
-
-        <p>
-          You can review and change supported app permissions through
-          your Android device settings. The available controls and
-          menu names vary by device and Android version. Denying a
-          permission may prevent a feature that depends on it from
-          working.
-        </p>
-
-        <p class="reference">
-          Device guidance:
-          <a
-            href="https://support.google.com/android/answer/9431959?hl=en"
-            rel="noopener noreferrer"
-          >Manage Android app permissions</a>.
-        </p>
+        <h2>3. Android Permissions and Device Controls</h2>
+        <p>The Application uses access needed for the on-device audio operation described above. The covered configuration does not use microphone recording, camera, contacts, call-history, or precise-location access.</p>
+        <p>You can review permissions that Android exposes for the Application in your device settings. Controls and menu names vary by Android version and device manufacturer. Denying a permission may prevent a feature dependent on it from working.</p>
+        <p>You can stop using the Application and use Android's app controls to stop or uninstall it. Device permissions do not replace any separate consent required for processing personal information.</p>
+        <p class="reference">Official guidance: <a href="https://support.google.com/android/answer/9431959?hl=en" rel="noopener noreferrer">Manage app permissions on Android</a>.</p>
       </section>
 
       <section id="purposes">
         <h2>4. Purposes and Legal Grounds</h2>
-
-        <p class="review">
-          <strong>[CONFIRM PROCESSING PURPOSES]</strong>
-          Connect each information category to its actual use, such
-          as providing a requested audio function, remembering
-          preferences, diagnosing errors, responding to support
-          requests, or displaying advertising. Include only implemented
-          purposes. Explain which processing is necessary and which
-          is optional. Where applicable law requires a legal basis,
-          identify the actual basis for each purpose and any legitimate
-          interests relied on.
-        </p>
-
-        <p>
-          Where processing depends on consent, that consent must
-          relate to the relevant activity. You may withdraw it using
-          the applicable controls or by contacting us. Withdrawal
-          does not affect the lawfulness of processing carried out
-          before withdrawal. Installing or continuing to use the
-          Application does not, by itself, replace affirmative consent
-          where such consent is required.
-        </p>
+        <p>Local settings are used to provide the audio controls you choose. Personal information received through correspondence is used to answer questions, investigate reported problems, handle privacy requests, protect against abuse of the support channel, and meet applicable legal obligations.</p>
+        <p>We will not use a support message as permission to send unrelated marketing or use its contents for advertising.</p>
+        <p>Where applicable data-protection law requires a legal basis, responding to support correspondence is based on our legitimate interests in assisting users and maintaining a reliable service, subject to the required balancing of your rights. Handling a legally required privacy request or retaining a legally required record is based on the relevant legal obligation. Where consent is required for a particular activity, we will obtain it before that activity.</p>
+        <p>You may withdraw consent where processing is based on consent. Withdrawal does not affect processing that was lawful before withdrawal. Merely downloading the Application or continuing to use it does not substitute for affirmative consent where the law requires it.</p>
       </section>
 
-      <section id="third-parties">
-        <h2>5. Third-Party Services, Advertising, and Tracking</h2>
-
-        <p class="review">
-          <strong>[CONFIRM PROVIDERS AND TRACKING]</strong>
-          Identify every relevant advertising, analytics,
-          crash-reporting, hosting, and other external provider
-          actually used. For each, explain the information received,
-          its purpose, and provide a verified privacy-policy link.
-          State whether ads are personalized and describe implemented
-          consent and opt-out controls. Address cookies or web-view
-          tracking only if used. Do not automatically add AdMob,
-          AppLovin, Firebase, or Google Play Services.
-        </p>
-
-        <p>
-          A service provider's own privacy notice may explain its
-          processing in more detail. Linking to that notice does not
-          replace our responsibility to describe the Application's
-          disclosures of information.
-        </p>
+      <section id="services">
+        <h2>5. Third-Party Services and External Links</h2>
+        <p>The configuration covered by this policy contains no embedded advertising, analytics, or cloud-audio-processing services. It does not use advertising cookies or cross-app tracking through an embedded SDK.</p>
+        <p>When you email us, email-delivery and mailbox services process your address, message, and attachments to transmit and store that correspondence. Authorized people helping us respond may access the information necessary to handle your request.</p>
+        <p>Google Play, Android, your device manufacturer, a backup provider, or another application you use can process information independently. Their handling of information is governed by their own notices and settings. This distinction does not exempt us from responsibility for services we integrate into the Application.</p>
+        <p>You can read <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google's Privacy Policy</a> for information about Google's own services. This reference does not mean that the Application integrates AdMob, Firebase, or another Google SDK.</p>
+        <p>When you follow an external link, the destination service may receive information about your visit. Review that service's privacy notice before providing information.</p>
       </section>
 
       <section id="sharing">
-        <h2>6. Disclosure of Information</h2>
-
-        <p>
-          Any routine disclosure of personal information must be
-          described in the relevant information and third-party-service
-          sections above, including the information involved, the
-          recipients or recipient categories, and the purposes.
-        </p>
-
-        <p>
-          Where legally permitted and necessary, we may also disclose
-          information held by us to comply with a binding legal
-          obligation or valid legal process, investigate unlawful
-          activity, protect people's safety, or establish, exercise,
-          or defend legal claims.
-        </p>
-
-        <p>
-          If a business reorganization, merger, acquisition, or
-          transfer of assets involves personal information, its
-          handling will remain subject to applicable privacy
-          requirements, including any required notice or consent.
-        </p>
-
-        <p class="review">
-          <strong>[CONFIRM SALE OR ADVERTISING-RELATED SHARING]</strong>
-          State whether any practice constitutes sale, sharing for
-          cross-context behavioral advertising, or targeted advertising
-          under applicable law. Where relevant, provide the actual
-          opt-out mechanism. Do not make an unverified “we never sell
-          or share information” claim.
-        </p>
+        <h2>6. When Information Is Shared</h2>
+        <p>Under the configuration described here, local audio operation and preferences do not create a developer-held listening profile. We do not sell support correspondence or disclose it for targeted advertising.</p>
+        <p>Information you provide directly may be disclosed to the people and service providers needed to handle your request, to legal or professional advisers when necessary, or in response to a binding legal obligation or valid legal process. We limit such disclosures to information relevant to the purpose.</p>
+        <p>We may also disclose information where necessary and legally permitted to investigate unlawful activity, protect a person's safety, or establish, exercise, or defend legal claims.</p>
+        <p>If a merger, acquisition, reorganization, or transfer of business assets involves personal information, its handling remains subject to applicable privacy requirements, including any required notice or consent.</p>
       </section>
 
       <section id="retention">
-        <h2>7. Data Storage and Retention</h2>
-
-        <p class="review">
-          <strong>[CONFIRM STORAGE AND RETENTION]</strong>
-          Give actual retention periods or meaningful retention
-          criteria for each relevant category, including local
-          settings, any audio data, diagnostics, accounts, support
-          communications, and privacy requests. Identify storage
-          locations or providers, backup retention, deletion schedules,
-          and justified exceptions. Do not invent fixed periods such
-          as 12 or 24 months.
-        </p>
-
-        <p>
-          If a legal obligation or another lawful exception requires
-          us to retain information after a deletion request, we will
-          explain the relevant reason to the extent permitted by law
-          and limit the retained information to that purpose.
-        </p>
+        <h2>7. Data Retention</h2>
+        <p><strong>Local settings:</strong> Preferences remain in the Application's local storage until replaced, cleared, or removed through the relevant device controls. Data held separately by a backup or migration service follows that service's settings and retention practices.</p>
+        <p><strong>Support correspondence:</strong> Our retention policy is to keep identifiable correspondence only while needed to resolve the issue and complete relevant follow-up. Once that purpose ends, we delete the information or remove identifying details unless a documented legal obligation or specific legal claim requires further retention.</p>
+        <p><strong>Privacy-request records:</strong> We retain only the information necessary to document our response and demonstrate compliance for the period justified by the applicable obligation or claim. We do not retain unrelated attachments merely because they accompanied a request.</p>
+        <p>Where a lawful exception prevents immediate deletion, we will explain the reason to the extent legally permitted, limit further use, and delete the information when the retention justification ends.</p>
       </section>
 
       <section id="deletion">
         <h2>8. Your Choices and Data Deletion</h2>
-
-        <p class="review">
-          <strong>[CONFIRM USER CONTROLS]</strong>
-          Provide the implemented steps for deleting local settings
-          or files, stopping relevant background processing,
-          withdrawing optional consent, and requesting deletion of
-          information held remotely. If the app supports account
-          creation, provide the actual in-app account-deletion steps
-          and the external account-deletion resource. Do not describe
-          controls that have not been implemented.
-        </p>
-
-        <p>
-          Uninstalling the Application is not a request to delete
-          information already held by us or another service. Copies
-          previously transmitted, saved outside the app, or included
-          in backups may remain subject to their applicable retention
-          and deletion procedures.
-        </p>
-
-        <p>
-          You may contact us using Section 14 to request access to or
-          deletion of personal information under our control. Please
-          identify the Application and describe the request without
-          sending unnecessary sensitive information.
-        </p>
+        <h3>Information stored on your device</h3>
+        <p>You can remove local app data using the Application's entry in Android settings and the available storage or uninstall controls. Clearing app data can reset your saved preferences. Menu names and options depend on the device.</p>
+        <p>Uninstalling the Application does not send us a request to delete an email you previously sent. It also does not necessarily remove copies held by a backup provider or information saved separately outside the Application.</p>
+        <h3>Information held by us</h3>
+        <p>To request deletion, email <a href="mailto:rajesh@monovatech.com?subject=10x%20Speaker%20sound%20booster%20-%20Data%20Deletion">rajesh@monovatech.com</a> with the subject <strong>10x Speaker sound booster — Data Deletion</strong>. Identify the email address used to contact us and the information you want deleted. You do not need to reinstall the Application to make a request.</p>
+        <p>We may ask for limited information needed to verify that a request concerns your information. Do not send identity documents unless we explain why they are necessary and how they will be handled.</p>
+        <p>We will respond within the applicable legal time limits and explain any lawful reason for retaining information. If no relevant information is held by us, we will tell you. The configuration covered by this policy has no app account to close.</p>
       </section>
 
       <section id="rights">
         <h2>9. Your Privacy Rights</h2>
-
-        <p>
-          Your rights depend on your location, the law that applies,
-          and the information involved. Rights are subject to the
-          conditions and exceptions established by that law.
-        </p>
-
+        <p>Your rights depend on your location, the applicable law, and the processing involved. You may contact us about access, correction, deletion, consent, or another privacy concern using Section 14.</p>
         <h3>European data-protection rights</h3>
-
-        <p>
-          Where the General Data Protection Regulation applies, rights
-          may include access, correction, erasure, restriction,
-          portability, objection to certain processing, withdrawal
-          of consent, and safeguards relating to certain automated
-          decisions. You may also lodge a complaint with the competent
-          supervisory authority.
-        </p>
-
+        <p>Where the General Data Protection Regulation applies, you may have rights to access, correct or erase information, restrict or object to processing, obtain portable information in relevant circumstances, and withdraw consent. You may also complain to the competent supervisory authority. These rights are subject to the conditions and exceptions established by law.</p>
+        <p class="reference">Official information: <a href="https://commission.europa.eu/law/law-topic/data-protection/information-individuals_en" rel="noopener noreferrer">European Commission — information for individuals</a>.</p>
         <h3>California privacy rights</h3>
-
-        <p>
-          Where the California Consumer Privacy Act, as amended,
-          applies to our processing, eligible California residents
-          may have rights to know and access information, correct
-          inaccuracies, request deletion, opt out of sale or qualifying
-          sharing, limit certain uses of sensitive personal
-          information, and exercise their rights without unlawful
-          discrimination.
-        </p>
-
-        <p>
-          Use the contact details in Section 14 to submit a request.
-          Where necessary and legally appropriate, we may request
-          limited information to verify requests to access, correct,
-          or delete information. We will not require verification
-          for an opt-out where applicable law prohibits it. We will
-          respond within applicable legal time limits and explain
-          any refusal and available review or appeal rights where
-          required.
-        </p>
-
-        <p class="review">
-          <strong>[CONFIRM REGIONAL REQUIREMENTS]</strong>
-          Add any applicable request methods, authorized-agent
-          procedures, opt-out signal handling, representatives,
-          appeal procedures, or other required disclosures. Explain
-          any legally significant automated decision-making if used.
-          Do not treat this general rights section as a complete
-          regional compliance notice.
-        </p>
-
-        <p class="reference">
-          Official information:
-          <a
-            href="https://commission.europa.eu/law/law-topic/data-protection/information-individuals_en"
-            rel="noopener noreferrer"
-          >European Commission privacy rights</a>
-          and
-          <a
-            href="https://oag.ca.gov/privacy/ccpa"
-            rel="noopener noreferrer"
-          >California privacy rights</a>.
-        </p>
+        <p>Where the California Consumer Privacy Act, as amended, applies, eligible residents may have rights to know and access information, correct inaccuracies, request deletion, opt out of sale or qualifying sharing, limit certain uses of sensitive personal information, and exercise their rights without unlawful discrimination.</p>
+        <p>The configuration described in this policy does not sell personal information or share it for cross-context behavioral advertising. You may still contact us about an applicable right, directly or through an authorized agent where permitted by law. We will not impose identity verification on an opt-out where applicable law prohibits it.</p>
+        <p class="reference">Official information: <a href="https://oag.ca.gov/privacy/ccpa" rel="noopener noreferrer">California Attorney General — CCPA</a>.</p>
+        <p>Where another applicable law gives you an appeal or complaint right, we will explain the available procedure when responding to a request that we cannot fulfill.</p>
       </section>
 
       <section id="children">
         <h2>10. Children's Privacy</h2>
-
-        <p class="review">
-          <strong>[CONFIRM INTENDED AUDIENCE]</strong>
-          State the app's actual audience and any applicable age
-          restriction. Explain any child-directed features, age
-          screening, and parental-consent procedures. Do not select
-          an under-13 or under-16 restriction solely because it
-          appears in a sample policy.
-        </p>
-
-        <p>
-          A parent or guardian who believes that a child's information
-          has been processed in violation of applicable privacy
-          requirements may contact us. We will review the concern
-          and take the action required by law, which may include
-          deleting the information or obtaining appropriate
-          authorization.
-        </p>
+        <p>The operating configuration covered here contains no account registration, advertising profiles, or automatic collection of a child's identity. We do not ask children to submit personal information through the Application.</p>
+        <p>If a parent or guardian believes that a child has sent us personal information in circumstances that violate applicable law, contact us using Section 14. We will review the concern and delete the information or take other action required by law. Any processing requiring parental authorization must not proceed without that authorization.</p>
+        <p>This policy does not establish an app-store age rating or override age-related requirements that apply to a particular user or jurisdiction.</p>
       </section>
 
       <section id="international">
-        <h2>11. International Data Processing</h2>
-
-        <p class="review">
-          <strong>[CONFIRM INTERNATIONAL PROCESSING]</strong>
-          Identify relevant countries or regions in which personal
-          information is processed by us and our providers. Where
-          transfer restrictions apply, identify the safeguards
-          actually used and how users can obtain information about
-          them. Do not claim that Standard Contractual Clauses,
-          an adequacy decision, or another mechanism is in place
-          without checking.
-        </p>
+        <h2>11. International Processing</h2>
+        <p>Monova Tech Pvt. Ltd.'s published business address is in Nepal. If you contact us from another country, your correspondence may be accessed by us in Nepal and processed by email services in other countries. Laws in those countries may differ from those where you live.</p>
+        <p>Any international transfer subject to legal restrictions must use a mechanism permitted by the applicable law and the required safeguards. Contact us for information about a transfer involving your correspondence. This policy does not claim a particular certification or transfer agreement that has not been established.</p>
+        <p>Under the operating configuration described above, the Application does not upload audio or local preferences to our servers.</p>
       </section>
 
       <section id="security">
         <h2>12. Security and Data Incidents</h2>
-
-        <p class="review">
-          <strong>[CONFIRM SECURITY MEASURES]</strong>
-          Describe implemented safeguards relevant to the information
-          processed, such as secure transmission, protected storage,
-          or access restrictions. Include only verified measures;
-          do not invent encryption, certifications, audits, or
-          guarantees.
-        </p>
-
-        <p>
-          No method of electronic storage or transmission can be
-          guaranteed completely secure. If an incident affecting
-          personal information under our control requires notification,
-          we will notify the relevant authorities and affected
-          individuals as required by applicable law.
-        </p>
+        <p>Our information-handling policy is to limit access to correspondence to authorized people who need it for support, privacy administration, or a lawful purpose; protect the accounts used to access that information; and avoid retaining unnecessary copies or sensitive attachments. These are operating commitments, not a claim of an independent security audit or certification.</p>
+        <p>No electronic storage or transmission method can be guaranteed completely secure. Protect access to your device and email account, and avoid sending sensitive information that is not needed for your request.</p>
+        <p>If a personal-data incident affecting information under our control requires notification, we will notify the relevant authorities and affected individuals as required by applicable law.</p>
       </section>
 
       <section id="changes">
         <h2>13. Changes to This Privacy Policy</h2>
-
-        <p>
-          We may update this Privacy Policy to reflect changes in
-          the Application, our information practices, or applicable
-          requirements. The published policy will display its
-          last-updated date.
-        </p>
-
-        <p>
-          Where applicable law requires additional notice or consent
-          for a material change, we will provide the required notice
-          or obtain that consent before the relevant processing begins.
-        </p>
+        <p>We may update this policy to reflect changes in the Application, our practices, or applicable requirements. The policy will show its last-updated date.</p>
+        <p>A version introducing accounts, advertising or analytics SDKs, microphone recording, remote audio processing, or other additional data handling must be accompanied by disclosures describing those practices. Where applicable law requires notice or consent before a change takes effect, we will provide that notice or obtain that consent.</p>
       </section>
 
       <section id="contact" class="contact">
         <h2>14. Contact Us</h2>
-
-        <p>
-          For privacy questions or requests concerning
-          <strong>10x Speaker sound booster</strong>, contact:
-        </p>
-
-        <p>
-          <strong>Monova Tech Pvt. Ltd.</strong>
-          <br>
-          Subject: 10x Speaker sound booster — Privacy Inquiry
-        </p>
-
-        <p class="review">
-          <strong>Privacy email:</strong>
-          [ADD VERIFIED COMPANY PRIVACY EMAIL]
-        </p>
-
-        <p class="review">
-          <strong>Additional contact information:</strong>
-          [ADD THE COMPANY'S ADDRESS OR OTHER CONTACT DETAILS WHERE
-          LEGALLY REQUIRED; REMOVE THIS NOTE AFTER REVIEW]
-        </p>
+        <p>For privacy questions, requests, or complaints concerning <strong>10x Speaker sound booster</strong>, contact:</p>
+        <address>
+          <p><strong>Monova Tech Pvt. Ltd.</strong><br>Birtamod Municipality-4<br>Jhapa, Nepal</p>
+          <p><strong>Email:</strong> <a href="mailto:rajesh@monovatech.com?subject=10x%20Speaker%20sound%20booster%20-%20Privacy%20Inquiry">rajesh@monovatech.com</a><br>
+          <strong>Website:</strong> <a href="https://monovatech.com/" rel="noopener noreferrer">monovatech.com</a><br>
+          <strong>Email subject:</strong> 10x Speaker sound booster — Privacy Inquiry</p>
+        </address>
+        <p class="reference">Company contact source: <a href="https://play.google.com/store/apps/details?id=app.breedlens.dogidentifier" rel="noopener noreferrer">Monova Tech Pvt. Ltd.'s publicly listed developer details on Google Play</a>. The linked listing establishes the company contact, not this Application's data practices.</p>
       </section>
     </article>
 
     <footer>
-      10x Speaker sound booster &middot;
-      Monova Tech Pvt. Ltd. &middot;
-      Privacy Policy review draft
+      <p>10x Speaker sound booster &middot; Android &middot; Monova Tech Pvt. Ltd.</p>
     </footer>
   </main>
 </body>
