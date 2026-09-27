@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+
+  <meta
+    name="description"
+    content="Privacy Policy for Music player play your music, operated by Monova Tech Pvt. Ltd."
+  >
+
+  <title>
+    Privacy Policy | Music player play your music
+  </title>
+
+  <style>
+    :root {
+      --background: #f5f6fa;
+      --surface: #ffffff;
+      --text: #242833;
+      --muted: #596173;
+      --accent: #4935a8;
+      --border: #e2e5ed;
+      --soft: #f3f0fc;
+      --notice-background: #fff8e9;
+      --notice-border: #ae7918;
+      --notice-text: #624612;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-padding-top: 24px;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      overflow-wrap: anywhere;
+    }
+
+    .page {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 42px 46px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-name {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 5vw, 2.6rem);
+      line-height: 1.2;
+      letter-spacing: -0.035em;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.22rem;
+      line-height: 1.45;
+    }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    p {
+      margin: 0 0 15px;
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    ul {
+      margin: 10px 0 18px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+
+    .metadata {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .metadata div {
+      margin-top: 5px;
+    }
+
+    .metadata dt,
+    .metadata dd {
+      display: inline;
+      margin: 0;
+    }
+
+    .metadata dt {
+      font-weight: 600;
+    }
+
+    .scope-notice {
+      margin-top: 24px;
+      padding: 16px 18px;
+      background: var(--notice-background);
+      color: var(--notice-text);
+      border-left: 4px solid var(--notice-border);
+      border-radius: 6px;
+    }
+
+    .scope-notice h2 {
+      font-size: 1rem;
+    }
+
+    .scope-notice p:last-child {
+      margin-bottom: 0;
+    }
+
+    nav {
+      margin-top: 24px;
+      padding: 18px 20px;
+      background: var(--soft);
+      border-radius: 8px;
+    }
+
+    nav h2 {
+      font-size: 1rem;
+    }
+
+    nav ul {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 20px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav li {
+      margin: 0;
+      font-size: 0.92rem;
+    }
+
+    .reference {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .contact {
+      padding: 22px;
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    footer p:last-child {
+      margin-bottom: 0;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 16px;
+      z-index: 10;
+      padding: 10px 16px;
+      background: var(--surface);
+      border: 2px solid var(--accent);
+    }
+
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 12px 9px;
+      }
+
+      .page {
+        padding: 26px 20px;
+        border-radius: 10px;
+      }
+
+      nav ul {
+        grid-template-columns: 1fr;
+      }
+
+      .contact {
+        padding: 18px;
+      }
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: #ffffff;
+        color: #000000;
+        font-size: 11pt;
+      }
+
+      .page {
+        max-width: none;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+      }
+
+      .skip-link,
+      nav {
+        display: none;
+      }
+
+      h2,
+      h3 {
+        break-after: avoid;
+      }
+
+      p,
+      li {
+        orphans: 3;
+        widows: 3;
+      }
+
+      .scope-notice,
+      .contact {
+        background: #ffffff;
+        color: #000000;
+        border: 1px solid #777777;
+      }
+
+      a {
+        color: #000000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#privacy-policy">
+    Skip to privacy policy
+  </a>
+
+  <main class="page" id="privacy-policy" tabindex="-1">
+    <header>
+      <p class="app-name">Music player play your music</p>
+
+      <h1>Privacy Policy</h1>
+
+      <dl class="metadata">
+        <div>
+          <dt>Service Provider:</dt>
+          <dd>Monova Tech Pvt. Ltd.</dd>
+        </div>
+
+        <div>
+          <dt>Platform:</dt>
+          <dd>Android</dd>
+        </div>
+
+        <div>
+          <dt>Document updated:</dt>
+          <dd>
+            <time datetime="2026-09-27">
+              27 September 2026
+            </time>
+          </dd>
+        </div>
+      </dl>
+    </header>
+
+    <nav aria-label="Privacy policy contents">
+      <h2>Contents</h2>
+
+      <ul>
+        <li><a href="#introduction">1. Introduction</a></li>
+        <li><a href="#information">2. Information we handle</a></li>
+        <li><a href="#permissions">3. Permissions and playback</a></li>
+        <li><a href="#purposes">4. How information is used</a></li>
+        <li><a href="#tracking">5. Advertising and tracking</a></li>
+        <li><a href="#sharing">6. Information sharing</a></li>
+        <li><a href="#retention">7. Storage and retention</a></li>
+        <li><a href="#deletion">8. Choices and deletion</a></li>
+        <li><a href="#rights">9. Your privacy rights</a></li>
+        <li><a href="#children">10. Children's privacy</a></li>
+        <li><a href="#transfers">11. International processing</a></li>
+        <li><a href="#security">12. Security</a></li>
+        <li><a href="#changes">13. Policy changes</a></li>
+        <li><a href="#contact">14. Contact us</a></li>
+      </ul>
+    </nav>
+
+    <article aria-label="Privacy Policy">
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+
+        <p>
+          This Privacy Policy applies to
+          <strong>Music player play your music</strong>
+          (the “Application”), operated by
+          <strong>Monova Tech Pvt. Ltd.</strong>
+          (“we,” “us,” “our,” or the “Service Provider”).
+        </p>
+
+        <p>
+          It explains how information is accessed, used, stored,
+          and disclosed when you use the Application in the
+          configuration described above or communicate with us.
+          It distinguishes information processed on your device
+          from information received by the Service Provider.
+        </p>
+
+        <p>
+          Monova Tech Pvt. Ltd. is responsible for personal
+          information we receive and determine how to use,
+          including support correspondence and privacy requests.
+          Where applicable data-protection law uses the term
+          “controller,” we act as controller for that processing.
+        </p>
+      </section>
+
+      <section id="information">
+        <h2>2. Information We Handle</h2>
+
+        <h3>Music files and media information</h3>
+
+        <p>
+          To display and play music that you make available to
+          the Application, the local-player configuration accesses
+          the relevant audio files and associated media information.
+          Depending on the file, that information can include its
+          title, artist, album, duration, file name, file location,
+          and embedded artwork.
+        </p>
+
+        <p>
+          This access is used for music browsing and playback.
+          Reading a music file on your device is not the same as
+          uploading it. In the configuration covered by this
+          policy, your audio files and music-library information
+          are not uploaded to servers operated by us or to
+          remote music-analysis services.
+        </p>
+
+        <p>
+          Audio files can contain personal information, including
+          information in recordings or their metadata. We do not
+          treat files as anonymous merely because they are
+          described as music or audio.
+        </p>
+
+        <h3>Playback information and preferences</h3>
+
+        <p>
+          The Application processes information needed to perform
+          your playback choices, such as the selected track,
+          playback position, and current playback state.
+        </p>
+
+        <p>
+          Where available features retain playlists, favourites,
+          recent selections, or player preferences, those records
+          are stored locally in the configuration described here.
+          They are not transmitted to us as a remote listening
+          history or used by us to build an advertising profile.
+        </p>
+
+        <h3>Support communications</h3>
+
+        <p>
+          If you email us, we receive your email address, the
+          contents of your message, attachments you choose to
+          include, and ordinary email delivery information.
+          You may voluntarily provide a device model, Android
+          version, app version, or description of a problem.
+        </p>
+
+        <p>
+          Please avoid sending passwords, identity documents,
+          payment information, private recordings, or other
+          sensitive information that is unnecessary for your
+          request.
+        </p>
+
+        <h3>Accounts and automatic reporting</h3>
+
+        <p>
+          The configuration covered by this policy does not
+          require an app account and does not send us automatic
+          analytics, advertising identifiers, or SDK-generated
+          crash reports. It does not require you to provide a
+          name, email address, or telephone number for local
+          music playback.
+        </p>
+      </section>
+
+      <section id="permissions">
+        <h2>3. Permissions and Playback Controls</h2>
+
+        <h3>Music and audio access</h3>
+
+        <p>
+          Depending on the Android version and the method used
+          to open music, Android may provide access through a
+          music-and-audio permission, an older storage permission,
+          or a grant for files you select. The Application uses
+          the access made available to it for its music functions.
+        </p>
+
+        <p>
+          Declining or withdrawing access can prevent the
+          Application from finding or playing affected files.
+          Permission to access media is not permission to use
+          that media for unrelated purposes.
+        </p>
+
+        <h3>Background and lock-screen playback</h3>
+
+        <p>
+          Where background playback is available and you start
+          it, playback may continue while another app is open
+          or your screen is locked.
+        </p>
+
+        <p>
+          Android media controls may display information about
+          the current track, such as its title, artist, artwork,
+          and playback state. Depending on your device and
+          connections, this information may also be visible
+          through compatible connected playback controls.
+          Consider your lock-screen and connected-device
+          settings when playing private audio.
+        </p>
+
+        <p>
+          Use the available playback controls to pause or stop
+          playback. Closing the player screen is not necessarily
+          the same as stopping background playback.
+        </p>
+
+        <h3>Microphone and unrelated information</h3>
+
+        <p>
+          Audio playback does not itself require recording your
+          surroundings. The configuration covered here does not
+          record microphone audio, telephone calls, or
+          conversations. It does not access contacts, messages,
+          call history, or precise location to provide local
+          music playback.
+        </p>
+
+        <p>
+          You can review available permissions in your Android
+          device settings. The names and locations of controls
+          vary by device and Android version.
+        </p>
+
+        <p class="reference">
+          Official guidance:
+          <a href="https://support.google.com/android/answer/9431959?hl=en">
+            Android app permissions
+          </a>,
+          <a href="https://developer.android.com/training/data-storage/shared/media">
+            shared media access
+          </a>,
+          and
+          <a href="https://developer.android.com/media/media3/session/background-playback">
+            background media playback
+          </a>.
+        </p>
+      </section>
+
+      <section id="purposes">
+        <h2>4. How Information Is Used</h2>
+
+        <p>
+          Information processed locally is used to open and play
+          selected audio, display relevant music information,
+          operate playback controls, and retain supported
+          preferences.
+        </p>
+
+        <p>
+          Information you separately send to us is used to
+          respond to your communication, investigate the issue
+          you report, handle privacy requests, and meet
+          applicable legal obligations. Where necessary, it
+          may also be used to establish, exercise, or defend
+          legal claims.
+        </p>
+
+        <p>
+          We do not use support correspondence to add you to
+          marketing campaigns or build advertising profiles.
+        </p>
+
+        <h3>Legal grounds where applicable</h3>
+
+        <p>
+          Where a legal basis is required, processing support
+          correspondence is based on our legitimate interest
+          in responding to requests and resolving reported
+          problems, subject to your rights and interests.
+          Processing necessary to satisfy an applicable legal
+          obligation is based on that obligation.
+        </p>
+
+        <p>
+          Where processing requires consent, consent must be
+          obtained for the relevant activity. You may withdraw
+          consent without affecting processing lawfully carried
+          out before withdrawal. Installing the Application
+          or continuing to use it is not a substitute for
+          affirmative consent where the law requires it.
+        </p>
+      </section>
+
+      <section id="tracking">
+        <h2>5. Advertising, Analytics, and Tracking</h2>
+
+        <p>
+          The configuration described in this policy does not
+          contain advertising or analytics SDKs. It does not
+          use advertising identifiers, tracking pixels, or
+          cross-app tracking technologies.
+        </p>
+
+        <p>
+          No online streaming, automatic remote artwork or
+          lyrics lookup, or app-controlled cloud synchronisation
+          is covered by this configuration. A version using
+          those services would require disclosures identifying
+          the relevant information, recipients, and purposes.
+        </p>
+
+        <p>
+          This HTML document contains no scripts, tracking
+          pixels, externally loaded fonts, or embedded
+          third-party content. The server used to host it may
+          separately process connection information, such as
+          an IP address and browser request details. The
+          absence of tracking code in this document does not
+          establish that its hosting service keeps no logs.
+        </p>
+      </section>
+
+      <section id="sharing">
+        <h2>6. Information Sharing and External Services</h2>
+
+        <p>
+          We do not receive local music files or listening
+          history through the described configuration and
+          therefore do not disclose those records from our
+          servers. We do not sell personal information received
+          through support communications or share it for
+          cross-context behavioural advertising.
+        </p>
+
+        <p>
+          Information you separately provide to us may be
+          disclosed in the following circumstances:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Business communication services:</strong>
+            Email delivery, storage, and support-administration
+            providers may process information necessary to
+            handle your communication.
+          </li>
+
+          <li>
+            <strong>Legal requirements:</strong>
+            Information may be disclosed where necessary to
+            comply with a binding legal obligation or valid
+            legal process.
+          </li>
+
+          <li>
+            <strong>Rights and safety:</strong>
+            Information may be disclosed where legally
+            permitted and necessary to protect people,
+            investigate suspected unlawful activity, or
+            establish, exercise, or defend legal claims.
+          </li>
+
+          <li>
+            <strong>Business changes:</strong>
+            Relevant records may be involved in a merger,
+            acquisition, reorganisation, or transfer of business
+            assets, subject to applicable privacy requirements
+            and any required notice or consent.
+          </li>
+
+          <li>
+            <strong>Your instructions:</strong>
+            Information may be disclosed where you specifically
+            request or lawfully authorise the disclosure.
+          </li>
+        </ul>
+
+        <p>
+          Android, your device manufacturer, your app store,
+          and services you independently use can process
+          information under their own privacy notices. Their
+          activities may include installations, updates,
+          operating-system diagnostics, backups, or email
+          delivery.
+        </p>
+
+        <p>
+          These independent activities are distinct from an
+          SDK integrated into the Application. An integrated
+          SDK's data practices remain part of the Application's
+          disclosure responsibilities.
+        </p>
+      </section>
+
+      <section id="retention">
+        <h2>7. Data Storage and Retention</h2>
+
+        <h3>Music files</h3>
+
+        <p>
+          Music held in your device's shared media storage
+          remains subject to your control and the controls
+          of any service you use to store or back it up.
+          Uninstalling a music player does not generally
+          delete music files held in shared storage.
+        </p>
+
+        <h3>Local app records</h3>
+
+        <p>
+          Saved app preferences and supported local library
+          records remain until they are replaced, reset, or
+          removed. Clearing app storage or uninstalling the
+          Application removes app-specific data according
+          to Android's storage behaviour. Copies held in
+          backups may have a separate lifecycle.
+        </p>
+
+        <h3>Support and privacy correspondence</h3>
+
+        <p>
+          Our retention policy is to keep support correspondence
+          while resolving the request and any necessary
+          follow-up. Afterwards, identifiable information is
+          retained only where needed for an unresolved matter,
+          an applicable legal obligation, or the establishment,
+          exercise, or defence of legal claims.
+        </p>
+
+        <p>
+          We may retain a limited record of a privacy request
+          and our response where necessary to demonstrate
+          appropriate handling. This does not justify keeping
+          unrelated information that should otherwise be
+          deleted.
+        </p>
+
+        <p>
+          When information is no longer needed for those
+          purposes, our policy is to delete it or irreversibly
+          anonymise it rather than retain identifiable records
+          indefinitely.
+        </p>
+
+        <h3>Device backups</h3>
+
+        <p>
+          Depending on app configuration, Android version,
+          and device settings, operating-system backup or
+          device-transfer services may preserve or restore
+          local app data. Manage those copies through the
+          relevant device or backup-account controls.
+        </p>
+
+        <p class="reference">
+          Platform information:
+          <a href="https://developer.android.com/identity/data/autobackup">
+            Android app-data backup
+          </a>.
+        </p>
+      </section>
+
+      <section id="deletion">
+        <h2>8. Your Choices and Data Deletion</h2>
+
+        <h3>Control media access</h3>
+
+        <p>
+          Review the Application's permissions through Android
+          settings. Revoking a permission limits future access
+          covered by that permission; it does not necessarily
+          erase information already stored.
+        </p>
+
+        <h3>Remove local app information</h3>
+
+        <p>
+          Use Android's app-storage controls to clear local
+          app data, or uninstall the Application. Clearing
+          app data can remove saved preferences and locally
+          maintained playlists or library records, so preserve
+          anything you need before taking that action.
+        </p>
+
+        <p>
+          To delete an original music file, use your device's
+          file-management or media-storage controls. Removing
+          a track from a playlist is not necessarily the same
+          as deleting its underlying audio file.
+        </p>
+
+        <h3>Request deletion of information held by us</h3>
+
+        <p>
+          Email
+          <a href="mailto:rajesh@monovatech.com">
+            rajesh@monovatech.com
+          </a>
+          with the subject
+          <strong>
+            Music player play your music — Data Deletion Request
+          </strong>.
+          Describe the correspondence or information concerned.
+          Where possible, use the email address associated
+          with the original communication.
+        </p>
+
+        <p>
+          We may request limited information where necessary
+          and legally appropriate to verify the request.
+          We cannot remotely retrieve or erase music and
+          local player records that are stored only on
+          your device.
+        </p>
+
+        <p>
+          Uninstalling the Application does not delete messages
+          you previously sent to us or automatically submit
+          a deletion request. If a lawful retention exception
+          applies, we will explain the relevant reason to
+          the extent permitted by law.
+        </p>
+
+        <p>
+          The described configuration has no app accounts,
+          so there is no app account to close. This does
+          not affect your ability to request deletion of
+          personal information separately held by us.
+        </p>
+      </section>
+
+      <section id="rights">
+        <h2>9. Your Privacy Rights</h2>
+
+        <p>
+          Your rights depend on your location, the processing
+          involved, and the applicable law. Rights are subject
+          to the conditions and exceptions established by
+          that law.
+        </p>
+
+        <h3>European data-protection rights</h3>
+
+        <p>
+          Where the General Data Protection Regulation applies,
+          you may have rights to access personal information,
+          correct inaccuracies, request erasure, restrict
+          processing, receive certain information in a portable
+          format, and object to certain processing.
+        </p>
+
+        <p>
+          You may withdraw consent where processing relies
+          on consent and lodge a complaint with the competent
+          supervisory authority. Applicable safeguards may
+          also concern decisions based solely on automated
+          processing that have legal or similarly significant
+          effects.
+        </p>
+
+        <h3>California privacy rights</h3>
+
+        <p>
+          Where the California Consumer Privacy Act, as amended,
+          applies to our processing, eligible California
+          residents may have rights to know and access
+          personal information, correct inaccuracies, request
+          deletion, opt out of sale or qualifying sharing,
+          limit certain uses of sensitive personal information,
+          and exercise their rights without unlawful
+          discrimination.
+        </p>
+
+        <p>
+          The configuration described here does not sell
+          personal information or share it for cross-context
+          behavioural advertising. An authorised agent may
+          submit a request where permitted by applicable law.
+        </p>
+
+        <h3>Submitting a request</h3>
+
+        <p>
+          Contact us using Section 14. We will respond within
+          applicable legal time limits. Verification will be
+          proportionate to the request and will not be required
+          where the law prohibits it.
+        </p>
+
+        <p>
+          If a request cannot be fulfilled, we will explain
+          the reason and any review or appeal mechanism
+          required by applicable law. These procedures relate
+          to information we actually hold; they do not require
+          you to upload your music library to identify local
+          activity we do not otherwise receive.
+        </p>
+
+        <p class="reference">
+          Official information:
+          <a href="https://commission.europa.eu/law/law-topic/data-protection/information-individuals_en">
+            European Commission privacy rights
+          </a>
+          and
+          <a href="https://oag.ca.gov/privacy/ccpa">
+            California consumer privacy rights
+          </a>.
+        </p>
+      </section>
+
+      <section id="children">
+        <h2>10. Children's Privacy</h2>
+
+        <p>
+          The local-playback configuration does not require
+          children or other users to submit personal information
+          to the Service Provider to play music.
+        </p>
+
+        <p>
+          We do not use support communications to profile
+          children or direct advertising to them. We will
+          not knowingly retain a child's personal information
+          in circumstances that violate applicable children's
+          privacy requirements.
+        </p>
+
+        <p>
+          A parent or guardian who believes that a child has
+          provided personal information that should not be
+          retained may contact us. We will review the concern
+          and take action required by applicable law, which
+          may include deleting the information or obtaining
+          legally required authorisation.
+        </p>
+      </section>
+
+      <section id="transfers">
+        <h2>11. International Processing</h2>
+
+        <p>
+          Monova Tech Pvt. Ltd. is based in Nepal. Information
+          you send to us may be accessed and handled in
+          Nepal and processed by the communication providers
+          involved in delivering or storing your message.
+        </p>
+
+        <p>
+          This is separate from local music playback, which
+          does not send your music library to us in the
+          configuration described by this policy.
+        </p>
+
+        <p>
+          Where applicable law restricts an international
+          transfer, the transfer must meet the relevant legal
+          requirements. This policy does not assert that
+          a particular adequacy decision, contractual mechanism,
+          or certification applies to every provider.
+        </p>
+
+        <p>
+          You may contact us for information about the
+          processing locations, recipients, and safeguards
+          relevant to personal information you have provided.
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>12. Security and Personal-Data Incidents</h2>
+
+        <p>
+          Our policy is to restrict access to personal
+          information received through support and privacy
+          communications to people and service providers
+          who need it for the purposes described here.
+          Safeguards must be appropriate to the information
+          and risks involved.
+        </p>
+
+        <p>
+          Local music and player records are also affected
+          by the security of your device, its operating
+          system, and any backups you maintain. Protect
+          access to your device and consider what music
+          information is visible on its lock screen or
+          connected displays.
+        </p>
+
+        <p>
+          No method of electronic transmission or storage
+          can be guaranteed completely secure. This policy
+          does not promise absolute security or a specific
+          certification.
+        </p>
+
+        <p>
+          If a personal-data incident affecting information
+          under our control requires notification, we will
+          notify the relevant authorities and affected
+          individuals as required by applicable law.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>13. Changes to This Privacy Policy</h2>
+
+        <p>
+          We may update this policy to reflect changes in
+          the Application, our information practices, or
+          applicable requirements. The published policy
+          will show its last-updated date.
+        </p>
+
+        <p>
+          Where applicable law requires additional notice
+          or consent for a material change, we will provide
+          the required notice or obtain the required consent
+          before the relevant processing begins.
+        </p>
+
+        <p>
+          Updating a privacy policy does not, by itself,
+          authorise processing that requires a separate
+          permission, prominent disclosure, or affirmative
+          consent.
+        </p>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>14. Contact Us</h2>
+
+        <p>
+          For questions about this Privacy Policy, requests
+          concerning your personal information, or privacy
+          concerns about
+          <strong>Music player play your music</strong>,
+          contact:
+        </p>
+
+        <address>
+          <strong>Monova Tech Pvt. Ltd.</strong>
+          <br>
+          Birtamod Municipality-4
+          <br>
+          Jhapa, Nepal
+          <br><br>
+
+          <strong>Email:</strong>
+          <a href="mailto:rajesh@monovatech.com">
+            rajesh@monovatech.com
+          </a>
+          <br>
+
+          <strong>Website:</strong>
+          <a href="https://monovatech.com/">
+            monovatech.com
+          </a>
+        </address>
+
+        <p style="margin-top: 16px; margin-bottom: 0;">
+          Please include
+          <strong>Music player play your music</strong>
+          in your message so that the Application concerned
+          can be identified.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <p>
+        Music player play your music
+        &middot;
+        Monova Tech Pvt. Ltd.
+      </p>
+
+      <p>
+        Privacy Policy
+        &middot;
+        Document updated 27 September 2026
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
