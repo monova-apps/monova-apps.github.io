@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex">
 
   <meta
     name="description"
-    content="Privacy Policy for Offline Shooting Game 3D, operated by Monova Tech Pvt. Ltd."
+    content="Privacy Policy for Offline Shooting Game 3D, an ad-supported Android game operated by Monova Tech Pvt. Ltd."
   >
 
   <title>Privacy Policy | Offline Shooting Game 3D</title>
@@ -21,6 +22,9 @@
       --accent: #34495e;
       --border: #dfe4e8;
       --soft: #f0f3f5;
+      --review-background: #fff8e8;
+      --review-border: #a87316;
+      --review-text: #62450d;
     }
 
     * {
@@ -140,19 +144,31 @@
       font-weight: 600;
     }
 
-    .summary {
+    .summary,
+    .review {
       margin-top: 24px;
       padding: 18px 20px;
-      background: var(--soft);
       border-left: 4px solid var(--accent);
       border-radius: 6px;
     }
 
-    .summary h2 {
+    .summary {
+      background: var(--soft);
+    }
+
+    .review {
+      background: var(--review-background);
+      color: var(--review-text);
+      border-left-color: var(--review-border);
+    }
+
+    .summary h2,
+    .review h2 {
       font-size: 1rem;
     }
 
-    .summary p:last-child {
+    .summary p:last-child,
+    .review p:last-child {
       margin-bottom: 0;
     }
 
@@ -191,6 +207,11 @@
 
     address {
       font-style: normal;
+    }
+
+    .reference {
+      color: var(--muted);
+      font-size: 0.9rem;
     }
 
     footer {
@@ -270,7 +291,9 @@
       }
 
       .summary,
+      .review,
       .contact {
+        display: block;
         background: #ffffff;
         color: #000000;
         border: 1px solid #777777;
@@ -289,7 +312,6 @@
   </a>
 
   <main class="page" id="privacy-policy" tabindex="-1">
-
     <header>
       <p class="game-name">Offline Shooting Game 3D</p>
 
@@ -307,20 +329,53 @@
         </div>
 
         <div>
-          <dt>Product:</dt>
-          <dd>Offline mobile game</dd>
+          <dt>Advertising:</dt>
+          <dd>This Game contains advertisements.</dd>
         </div>
 
         <div>
-          <dt>Last updated:</dt>
+          <dt>Draft updated:</dt>
           <dd>
-            <time datetime="2026-10-07">
-              7 October 2026
-            </time>
+            <time datetime="2026-10-07">7 October 2026</time>
           </dd>
         </div>
       </dl>
     </header>
+
+    <aside class="summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Offline gameplay and advertising</h2>
+
+      <p>
+        Offline Shooting Game 3D includes advertisements alongside
+        its offline gameplay. Offline play does not mean that
+        advertising services perform no data collection when
+        a network connection is available. Local game information,
+        advertising-related processing, and messages sent to us
+        are addressed separately below.
+      </p>
+    </aside>
+
+    <aside class="review" aria-labelledby="review-heading">
+      <h2 id="review-heading">Publisher review before publication</h2>
+
+      <p>
+        Advertising is confirmed. The advertising networks,
+        mediation partners, exact SDK data flows, consent controls,
+        retention arrangements, and intended audience have not
+        been supplied. Complete the provider-specific disclosure
+        in Section 5 and verify the remaining operational terms
+        against the released Game.
+      </p>
+
+      <p>
+        The earlier draft's local-storage and account descriptions
+        are not a technical audit. This revision does not assume
+        that accounts, purchases, analytics, or cloud services
+        are absent merely because gameplay works offline.
+        Remove this review notice and the noindex setting only
+        after the policy accurately reflects the release.
+      </p>
+    </aside>
 
     <nav class="contents" aria-label="Privacy policy contents">
       <h2>Contents</h2>
@@ -330,8 +385,8 @@
         <li><a href="#gameplay">2. Gameplay information</a></li>
         <li><a href="#device">3. Device access</a></li>
         <li><a href="#communications">4. Communications</a></li>
-        <li><a href="#services">5. External services</a></li>
-        <li><a href="#purposes">6. How information is used</a></li>
+        <li><a href="#services">5. Advertising and external services</a></li>
+        <li><a href="#purposes">6. Purposes and legal grounds</a></li>
         <li><a href="#sharing">7. Information disclosures</a></li>
         <li><a href="#retention">8. Storage and retention</a></li>
         <li><a href="#deletion">9. Choices and deletion</a></li>
@@ -339,13 +394,12 @@
         <li><a href="#children">11. Children's privacy</a></li>
         <li><a href="#international">12. International processing</a></li>
         <li><a href="#security">13. Security</a></li>
-        <li><a href="#changes">14. Changes to this policy</a></li>
+        <li><a href="#changes">14. Policy changes</a></li>
         <li><a href="#contact">15. Contact us</a></li>
       </ul>
     </nav>
 
     <article aria-label="Privacy Policy for Offline Shooting Game 3D">
-
       <section id="introduction">
         <h2>1. Introduction</h2>
 
@@ -358,88 +412,63 @@
         </p>
 
         <p>
-          This Privacy Policy explains how information is
-          handled when you use the Game and when you
-          communicate with us. It distinguishes information
-          processed locally on your device from personal
-          information you choose to provide directly to us.
+          It addresses information handled through gameplay,
+          advertising, integrated services, and communications
+          with us. It distinguishes on-device processing from
+          information transmitted to the Service Provider
+          or another organisation.
         </p>
 
         <p>
-          Where applicable privacy law uses the term
-          “data controller,” Monova Tech Pvt. Ltd. acts as
-          controller for personal information that we receive
-          and determine how to use, including support and
-          privacy communications.
+          Where applicable law uses the term “data controller,”
+          we act as controller for processing whose purposes
+          and means we determine. An external provider's role
+          depends on the actual processing and arrangements
+          with that provider.
         </p>
       </section>
 
       <section id="gameplay">
         <h2>2. Gameplay Information</h2>
 
-        <h3>Game progress</h3>
+        <h3>Game state and player input</h3>
 
         <p>
-          The Game processes information necessary to provide
-          gameplay. Depending on your progress, this may
-          include completed or unlocked levels, mission
-          progress, scores, achievements, earned in-game
-          rewards, selected equipment, gameplay settings,
-          and other information needed to restore your
-          current game state.
+          The Game processes your input and the current game
+          state to respond to actions such as movement, aiming,
+          firing, pausing, restarting, and changing supported
+          settings.
         </p>
 
         <p>
-          This information is stored locally on your device
-          for the offline gameplay covered by this policy.
-          It is used so that you can continue playing without
-          starting again each time the Game is opened.
-        </p>
-
-        <h3>Gameplay actions</h3>
-
-        <p>
-          The Game processes your interactions with its
-          controls, such as movement, aiming, firing,
-          selecting levels, changing equipment, pausing,
-          restarting, and adjusting settings. These actions
-          are processed to respond to your input and operate
-          the game.
+          Depending on the features available in the installed
+          version, saved game information can include progress,
+          scores, selections, and preferences. Where these
+          records are stored locally, they support restoring
+          your progress and settings on the device.
         </p>
 
         <p>
-          The Game's simulated weapons, targets, missions,
-          characters, and shooting actions are virtual
-          gameplay elements. They do not represent collection
-          of information about real-world weapons, shooting
-          activity, or your physical movements outside the Game.
+          Local saving does not establish that no gameplay
+          events are transmitted by an advertising or analytics
+          component. Any such transmission must be identified
+          separately in the service disclosures below.
         </p>
 
-        <h3>Settings and preferences</h3>
+        <h3>Device characteristics</h3>
 
         <p>
-          The Game may store preferences such as sound,
-          music, vibration, sensitivity, graphics quality,
-          control configuration, and other supported gameplay
-          options. These settings are retained locally so
-          that your preferences can be restored when you
-          return to the Game.
-        </p>
-
-        <h3>Device information used locally</h3>
-
-        <p>
-          The Game may use technical characteristics of
-          your device, such as display size, orientation,
-          graphics capabilities, and available resources,
-          to render the 3D environment and provide compatible
-          gameplay.
+          The Game uses the device capabilities needed to
+          render its graphics and respond to input. Display
+          dimensions, orientation, and graphics capabilities
+          can be relevant to that operation.
         </p>
 
         <p>
-          Processing technical characteristics on the device
-          does not, by itself, mean that those characteristics
-          are transmitted to the Service Provider.
+          Information used locally to render the Game is
+          distinct from device information sent with an
+          advertising request. This policy does not describe
+          all device information as anonymous or local-only.
         </p>
       </section>
 
@@ -447,47 +476,40 @@
         <h2>3. Device Access and Permissions</h2>
 
         <p>
-          Core offline gameplay does not require access to
-          your contacts, call history, text messages, precise
-          location, personal photo library, or personal files.
-        </p>
-
-        <h3>Audio</h3>
-
-        <p>
-          The Game may play music, sound effects, and other
-          game audio through your device. Playing game audio
-          is different from recording microphone audio.
-          The offline gameplay described in this policy does
-          not require recording your conversations or
-          surrounding sounds.
-        </p>
-
-        <h3>Vibration</h3>
-
-        <p>
-          Where vibration or haptic feedback is supported,
-          the Game may activate your device's vibration
-          feature in response to gameplay events. This
-          provides tactile feedback and does not collect
-          personal information.
-        </p>
-
-        <h3>Permissions</h3>
-
-        <p>
-          You can review permissions available to the Game
-          through your device settings. The names and
-          locations of permission controls can vary depending
-          on the Android version and device manufacturer.
+          Review the Game's available permissions through
+          Android settings. The controls and menu names
+          vary by Android version and device manufacturer.
         </p>
 
         <p>
-          If a future Game feature requires additional
-          sensitive access, the relevant permission and
-          privacy disclosures will be provided as required.
-          Granting access for one feature does not authorise
-          unrelated processing.
+          Playing game sound is different from recording
+          microphone audio. Similarly, an in-game viewpoint
+          does not, by itself, require access to the device's
+          physical camera.
+        </p>
+
+        <p>
+          The exact permissions requested by the released
+          Game and its SDKs must be verified. This draft
+          does not establish that microphone, location,
+          media, or other sensitive access is present
+          or absent.
+        </p>
+
+        <p>
+          An advertising identifier and location inferred
+          from an IP address are also different from
+          precise location obtained through a location
+          permission. Advertising processing must not
+          be overlooked simply because no sensitive
+          permission prompt appears.
+        </p>
+
+        <p>
+          Where permission or a prominent disclosure is
+          required, it must relate to the actual feature
+          and processing involved. Permission for one
+          function does not authorise unrelated collection.
         </p>
       </section>
 
@@ -495,125 +517,661 @@
         <h2>4. Information You Send to Us</h2>
 
         <p>
-          You do not need to provide your name, email
-          address, telephone number, or other direct contact
-          information to play the offline Game.
+          If you contact us for support, feedback, or a
+          privacy request, we receive the information
+          included in your message. This can include
+          your email address, any name you provide,
+          message content, attachments, and ordinary
+          email delivery information.
         </p>
 
         <p>
-          If you choose to contact us for support, feedback,
-          or a privacy request, we receive the information
-          contained in your communication. This may include
-          your email address, name if you provide one,
-          message content, attachments, and ordinary email
-          delivery information.
+          You may voluntarily provide your device model,
+          Android version, Game version, or details about
+          a gameplay problem to help us respond.
         </p>
 
         <p>
-          You may voluntarily provide information such as
-          your device model, Android version, Game version,
-          level or mission concerned, or a description of
-          a technical problem to help us investigate your request.
-        </p>
-
-        <p>
-          Screenshots can contain notifications, account
-          names, or information from outside the Game.
-          Remove unrelated private information before
-          sending screenshots or other attachments.
-        </p>
-
-        <p>
-          Please do not send passwords, payment-card details,
-          identity documents, or other sensitive information
-          that is unnecessary for your request.
+          Remove unrelated notifications, account details,
+          and private information from screenshots before
+          sending them. Please do not send passwords,
+          payment-card details, or unnecessary identity
+          documents.
         </p>
       </section>
 
       <section id="services">
-        <h2>5. Advertising, Analytics, and External Services</h2>
+        <h2>5. Advertising and External Services</h2>
 
-        <h3>Offline gameplay</h3>
+        <h3>Advertisements in the Game</h3>
 
         <p>
-          The core gameplay described by this policy is
-          designed to function without an internet connection.
-          Game progress and settings described above are
-          maintained locally rather than through a
-          developer-operated player account.
+          <strong>Offline Shooting Game 3D contains ads.</strong>
+          Advertising is part of the current Game, not
+          merely a possible future feature.
         </p>
 
         <p>
-          Offline functionality does not mean that every
-          service on your device is offline. Android,
-          Google Play, your device manufacturer, backup
-          services, or other platform components may
-          independently communicate with their providers
-          under their own privacy practices.
+          Advertising services can receive information
+          directly through software integrated into the
+          Game. Such processing remains relevant to this
+          policy even when the Service Provider does
+          not receive a copy through its own servers.
         </p>
 
-        <h3>Advertising and analytics</h3>
+        <h3>Advertising information and purposes</h3>
 
         <p>
-          This policy does not identify an advertising,
-          analytics, or crash-reporting provider because
-          no such provider has been confirmed for the
-          Game in the information used to prepare this policy.
+          The information processed depends on the actual
+          advertising integration, its configuration,
+          your choices, and applicable requirements.
+          Categories that must be checked include:
+        </p>
+
+        <ul>
+          <li>
+            IP addresses and approximate location
+            derived from those addresses.
+          </li>
+          <li>
+            Advertising identifiers and other device,
+            app, or installation identifiers used
+            by the deployed services.
+          </li>
+          <li>
+            Device and app information, such as
+            operating-system version and diagnostic
+            information.
+          </li>
+          <li>
+            Ad requests, impressions, interactions,
+            and measurement events.
+          </li>
+          <li>
+            Consent or privacy-choice records where
+            those are processed by the integration.
+          </li>
+        </ul>
+
+        <p>
+          These are review categories, not a verified
+          inventory of this Game's collection. Potential
+          purposes include delivering advertisements,
+          measuring performance, detecting invalid traffic,
+          and personalising ads where implemented and
+          legally permitted.
+        </p>
+
+        <div class="review">
+          <p>
+            <strong>Provider-specific disclosure to complete:</strong>
+            Identify the actual advertising network,
+            every relevant mediation partner, and any
+            analytics or crash-reporting provider.
+            Include their official privacy links,
+            the information each receives, and its purposes.
+          </p>
+
+          <p>
+            Also specify the actual consent and opt-out
+            controls, how users reopen those controls,
+            retention and deletion arrangements, processing
+            locations, and any child-directed configuration.
+            No particular advertising company is assumed.
+          </p>
+        </div>
+
+        <h3>Personalised and non-personalised advertising</h3>
+
+        <p>
+          Where consent is required for advertising-related
+          device access or processing, the activity must
+          not begin before valid consent is obtained.
+          This draft does not assert that a consent
+          platform or privacy-options screen has already
+          been implemented.
         </p>
 
         <p>
-          If the distributed Game includes advertising,
-          analytics, crash reporting, attribution, or another
-          third-party SDK that transmits information, the
-          relevant provider, information categories, purposes,
-          consent controls, and applicable privacy links must
-          be added to this policy before those statements
-          can accurately describe that release.
+          Non-personalised advertising does not necessarily
+          mean that no information is processed. Ad
+          delivery, measurement, and fraud prevention can
+          still involve data, depending on the service
+          and configuration.
         </p>
 
-        <h3>App store and operating system</h3>
+        <h3>Offline availability</h3>
 
         <p>
-          Google Play, Android, and your device manufacturer
-          may process information independently for app
-          installation, updates, security, platform diagnostics,
-          licensing, backups, or account services.
-        </p>
-
-        <p>
-          Their independent processing is distinct from
-          information collected by the Game itself.
-          An SDK integrated directly into the Game is not
-          considered independent merely because another
-          company operates that SDK.
-        </p>
-
-        <h3>This privacy-policy page</h3>
-
-        <p>
-          This HTML document does not contain JavaScript,
-          advertising, tracking pixels, externally loaded
-          fonts, or embedded third-party media.
+          Offline gameplay does not guarantee that
+          advertisements or related optional functions
+          work without a connection. Advertising
+          availability depends on the integration
+          and network conditions.
         </p>
 
         <p>
-          The web server used to host this page may separately
-          process ordinary connection information, such as
-          an IP address, browser information, and request time.
-          The absence of tracking code in this document does
-          not establish that its hosting service maintains
-          no server logs.
+          Being offline does not delete information
+          already transmitted to an advertising service
+          and is not a substitute for withdrawing consent
+          or exercising an applicable privacy right.
+        </p>
+
+        <h3>External destinations</h3>
+
+        <p>
+          Selecting an advertisement may open a website,
+          another app, or an app-store page. Information
+          you provide there is handled by that recipient.
+          Its privacy notice does not replace our
+          responsibility to explain advertising processing
+          within this Game.
+        </p>
+
+        <h3>Platform services and this policy page</h3>
+
+        <p>
+          Android, Google Play, and your device manufacturer
+          may independently process information for
+          installation, updates, security, diagnostics,
+          or backups. An SDK integrated into the Game
+          is not independent platform processing merely
+          because another company operates it.
+        </p>
+
+        <p>
+          This HTML document contains no scripts, tracking
+          pixels, embedded ads, or externally loaded
+          fonts. Its hosting service may separately
+          process connection information and server logs.
         </p>
       </section>
 
       <section id="purposes">
-        <h2>6. How Information Is Used</h2>
+        <h2>6. Purposes and Legal Grounds</h2>
 
         <p>
-          Local gameplay information is used to:
+          Gameplay information is used to operate the
+          Game and provide the functions you select.
+          Advertising-related information must be limited
+          to the purposes accurately identified for
+          the actual providers in Section 5.
         </p>
 
-        <ul>
-          <li>Operate levels, missions, and other gameplay;</li>
-          <li>Respond to your controls and in-game actions;</li>
-          <li>Save and restore supported game progress
+        <p>
+          Information you send to us is used to respond
+          to your communication, investigate reported
+          issues, handle privacy requests, and satisfy
+          applicable legal obligations. Where necessary
+          and lawful, it may also be used to establish,
+          exercise, or defend legal claims.
+        </p>
+
+        <p>
+          Where a legal basis is required, the published
+          policy must identify it for each relevant
+          purpose. Consent, contractual necessity,
+          legal obligations, and legitimate interests
+          are not interchangeable justifications.
+        </p>
+
+        <p>
+          Where processing relies on consent, you may
+          withdraw it without affecting earlier lawful
+          processing. Installing the Game, accepting
+          a general policy, or continuing to play
+          does not replace affirmative consent where
+          required for a specific activity.
+        </p>
+      </section>
+
+      <section id="sharing">
+        <h2>7. Information Disclosures</h2>
+
+        <p>
+          Relevant recipients include the advertising
+          and other integrated providers identified
+          in the completed Section 5, and services
+          handling communications you send us.
+        </p>
+
+        <p>
+          Information under our control may also be
+          disclosed where necessary and legally permitted
+          to comply with binding legal obligations,
+          protect people, investigate unlawful activity,
+          or establish, exercise, or defend legal claims.
+        </p>
+
+        <p>
+          Relevant records may be involved in a merger,
+          acquisition, reorganisation, or transfer of
+          business assets, subject to applicable privacy
+          requirements and any required notice or consent.
+        </p>
+
+        <p>
+          This policy does not claim that all advertising
+          information is anonymous. Replacing a name
+          with a persistent or resettable identifier
+          does not necessarily anonymise the information.
+        </p>
+
+        <p>
+          Whether a disclosure constitutes a sale,
+          sharing for cross-context behavioural advertising,
+          or targeted advertising under applicable law
+          depends on the actual data flows and arrangements.
+          That assessment and any required opt-out
+          mechanism remain part of the publication review.
+        </p>
+      </section>
+
+      <section id="retention">
+        <h2>8. Storage and Retention</h2>
+
+        <h3>Local records</h3>
+
+        <p>
+          Records saved in app-specific storage remain
+          subject to the Game's save behaviour and
+          your device's storage controls. Clearing
+          app data can remove saved progress and
+          preferences. Restarting a level is not
+          necessarily the same as deleting saved data.
+        </p>
+
+        <h3>Advertising and diagnostic information</h3>
+
+        <p>
+          Retention must be specified for the providers
+          and data actually used. The completed disclosure
+          should state retention periods or meaningful
+          criteria, including any justified fraud-prevention,
+          accounting, security, or legal exceptions.
+        </p>
+
+        <p>
+          No fixed advertising-data retention period
+          has been verified for this Game. Uninstalling
+          it does not automatically delete records
+          already held by an advertising provider.
+        </p>
+
+        <h3>Support and privacy correspondence</h3>
+
+        <p>
+          The proposed retention rule for correspondence
+          is to keep identifiable information while
+          resolving the request and necessary follow-up.
+          Further retention should be limited to a
+          specific continuing need, such as an unresolved
+          dispute or applicable legal obligation.
+        </p>
+
+        <p>
+          Information no longer needed for those purposes
+          should be deleted or irreversibly anonymised.
+          A limited record of a privacy request and
+          its outcome may be retained where necessary
+          to demonstrate appropriate handling.
+        </p>
+
+        <h3>Backups</h3>
+
+        <p>
+          Depending on app configuration, Android version,
+          and device settings, backup or device-transfer
+          services may preserve or restore local app
+          data. Those copies may have a separate
+          lifecycle from the currently installed Game.
+        </p>
+
+        <p class="reference">
+          Platform information:
+          <a href="https://developer.android.com/identity/data/autobackup">
+            Android app-data backup
+          </a>.
+        </p>
+      </section>
+
+      <section id="deletion">
+        <h2>9. Privacy Choices and Data Deletion</h2>
+
+        <h3>Android advertising controls</h3>
+
+        <p>
+          Supported Android devices provide controls
+          to reset or delete the advertising ID.
+          Available menus vary by device and version.
+          Older versions may provide an option to
+          limit personalised advertising.
+        </p>
+
+        <p>
+          These controls do not necessarily remove
+          advertisements, delete previously collected
+          records, or replace consent and opt-out
+          mechanisms required within the Game.
+        </p>
+
+        <p class="reference">
+          Official guidance:
+          <a href="https://support.google.com/googleplay/android-developer/answer/6048248?hl=en">
+            Android advertising ID controls
+          </a>.
+        </p>
+
+        <h3>Remove local game information</h3>
+
+        <p>
+          Use Android's app-storage controls to clear
+          app data or uninstall the Game. Clearing
+          app data can remove saved progress and
+          preferences, so preserve information you
+          need before taking that action.
+        </p>
+
+        <p>
+          Clearing only the cache is not necessarily
+          the same as clearing all app data. Manage
+          backup copies and information held by
+          external services separately.
+        </p>
+
+        <h3>Submit a privacy request</h3>
+
+        <p>
+          Email
+          <a href="mailto:rajesh@monovatech.com">
+            rajesh@monovatech.com
+          </a>
+          with the subject
+          <strong>
+            Offline Shooting Game 3D — Privacy Request
+          </strong>.
+        </p>
+
+        <p>
+          Explain the request and identify the relevant
+          communication or information where possible.
+          Do not send passwords, unnecessary identity
+          documents, or your entire save file with
+          an initial request.
+        </p>
+
+        <p>
+          Requests concerning information under our
+          control will be handled by us. Where a
+          provider independently controls relevant
+          information, the applicable provider procedure
+          must be identified; involving a provider
+          does not remove our own responsibilities.
+        </p>
+
+        <p>
+          Verification, where necessary and legally
+          appropriate, will be proportionate. If a
+          lawful retention exception prevents deletion,
+          we will explain the reason to the extent
+          permitted by law.
+        </p>
+
+        <p>
+          This document does not establish whether
+          the Game has accounts. If account creation
+          is included, the actual in-game and external
+          account-deletion methods must be disclosed;
+          uninstalling alone is not account deletion.
+        </p>
+      </section>
+
+      <section id="rights">
+        <h2>10. Your Privacy Rights</h2>
+
+        <p>
+          Your rights depend on your location,
+          applicable law, and the processing involved.
+          Legal conditions and exceptions may apply.
+        </p>
+
+        <h3>European data-protection rights</h3>
+
+        <p>
+          Where the General Data Protection Regulation
+          applies, rights may include information
+          about processing, access, correction,
+          erasure, restriction, portability, objection,
+          and safeguards concerning certain automated
+          decisions. You may withdraw consent where
+          processing relies on it and complain to
+          the competent supervisory authority.
+        </p>
+
+        <h3>California privacy rights</h3>
+
+        <p>
+          Where the California Consumer Privacy Act,
+          as amended, applies, eligible residents
+          may have rights to know and access
+          information, correct inaccuracies, request
+          deletion, opt out of sale or qualifying
+          sharing, limit certain sensitive-information
+          uses, and exercise rights without unlawful
+          discrimination.
+        </p>
+
+        <p>
+          These statements do not replace a required
+          advertising opt-out mechanism or legally
+          required recognition of opt-out signals.
+          The actual implementation must support
+          the rights that apply.
+        </p>
+
+        <h3>Handling requests</h3>
+
+        <p>
+          Contact us using Section 15. We will
+          respond within applicable legal time
+          limits. Authorised agents may act where
+          permitted. Verification will not be
+          imposed where prohibited.
+        </p>
+
+        <p>
+          Where required, we will explain a refusal
+          and the available review or appeal
+          procedure.
+        </p>
+
+        <p class="reference">
+          Official information:
+          <a href="https://commission.europa.eu/law/law-topic/data-protection/information-individuals_en">
+            European Commission privacy rights
+          </a>
+          and
+          <a href="https://oag.ca.gov/privacy/ccpa">
+            California consumer privacy rights
+          </a>.
+        </p>
+      </section>
+
+      <section id="children">
+        <h2>11. Children's Privacy</h2>
+
+        <p>
+          The intended audience and any age-screening
+          arrangements for this Game have not been
+          supplied. This policy does not invent an
+          age restriction or treat a store content
+          rating as proof of compliance with
+          children's privacy requirements.
+        </p>
+
+        <p>
+          Advertising identifiers can constitute
+          children's personal information under
+          applicable law. Where parental consent,
+          child-specific advertising restrictions,
+          or other protections apply, they must
+          be implemented before the relevant
+          processing begins.
+        </p>
+
+        <p>
+          A parent or guardian who believes that
+          a child's information has been handled
+          unlawfully may contact us. We will
+          review the concern and take the action
+          required by applicable law, including
+          deletion or stopping relevant processing
+          where required.
+        </p>
+      </section>
+
+      <section id="international">
+        <h2>12. International Processing</h2>
+
+        <p>
+          Monova Tech Pvt. Ltd. is based in
+          Nepal. Information you send us may
+          be handled there and by services
+          involved in delivering or storing
+          your communication.
+        </p>
+
+        <p>
+          Advertising and other providers may
+          process information in additional
+          countries. The relevant locations,
+          recipients, and transfer safeguards
+          must be established for the actual
+          integrations.
+        </p>
+
+        <p>
+          Where international transfers are
+          restricted by law, the required
+          safeguards must be in place. This
+          draft does not claim that an
+          adequacy decision, contractual transfer
+          mechanism, or certification has been
+          verified.
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>13. Security and Personal-Data Incidents</h2>
+
+        <p>
+          Our proposed handling standard is to
+          limit access to personal information
+          to authorised people and providers
+          who need it for the stated purposes,
+          and to apply safeguards appropriate
+          to the information and risks involved.
+        </p>
+
+        <p>
+          The release must be checked against
+          that standard, including SDK network
+          traffic, storage, and access controls.
+          This document does not certify a
+          security audit, a specific encryption
+          implementation, or a security framework.
+        </p>
+
+        <p>
+          No method of electronic storage or
+          transmission can be guaranteed
+          completely secure. Protect access
+          to your device and any associated
+          accounts or backups.
+        </p>
+
+        <p>
+          If an incident affecting information
+          under our control requires notification,
+          we will notify the relevant authorities
+          and affected individuals as required
+          by applicable law.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>14. Changes to This Privacy Policy</h2>
+
+        <p>
+          We may revise this policy when the
+          Game, its advertising partners,
+          our procedures, or applicable
+          requirements change. The published
+          policy will show its last-updated date.
+        </p>
+
+        <p>
+          Where additional notice or consent
+          is required for a material change,
+          we will provide that notice or
+          obtain consent before the relevant
+          processing begins.
+        </p>
+
+        <p>
+          Updating a privacy policy does not
+          replace a required in-game disclosure,
+          permission request, consent mechanism,
+          or deletion control.
+        </p>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>15. Contact Us</h2>
+
+        <p>
+          For privacy questions or requests
+          concerning
+          <strong>Offline Shooting Game 3D</strong>,
+          contact:
+        </p>
+
+        <address>
+          <strong>Monova Tech Pvt. Ltd.</strong>
+          <br>
+          Birtamod Municipality-4
+          <br>
+          Jhapa, Nepal
+          <br><br>
+
+          <strong>Email:</strong>
+          <a href="mailto:rajesh@monovatech.com">
+            rajesh@monovatech.com
+          </a>
+        </address>
+
+        <p style="margin-top: 16px; margin-bottom: 0;">
+          Please include
+          <strong>Offline Shooting Game 3D</strong>
+          in your message so that the
+          Game concerned can be identified.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <p>
+        Offline Shooting Game 3D
+        &middot;
+        Monova Tech Pvt. Ltd.
+      </p>
+
+      <p>
+        Privacy Policy draft
+        &middot;
+        Updated 7 October 2026
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
