@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8fafc">
+  <meta name="description" content="Privacy Policy for Hacker Panel. Learn how your data is stored, processed, and protected.">
+  <title>Privacy Policy | Hacker Panel</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.8;
+      color: #334155;
+      background: #f8fafc;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 42px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      color: #0f172a;
+      font-size: 30px;
+      line-height: 1.3;
+      letter-spacing: -0.7px;
+    }
+
+    .subtitle {
+      margin: 0 0 28px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    h2 {
+      margin: 32px 0 10px;
+      padding-bottom: 8px;
+      color: #0f172a;
+      font-size: 19px;
+      line-height: 1.5;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 8px 0 18px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 7px;
+      padding-left: 3px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      padding: 2px 5px;
+      color: #334155;
+      background: #f1f5f9;
+      border-radius: 4px;
+      font-size: 0.9em;
+      overflow-wrap: anywhere;
+    }
+
+    .contact {
+      margin-top: 12px;
+      padding: 16px 18px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+    }
+
+    .effective-date {
+      margin-top: 28px;
+      padding-top: 18px;
+      color: #64748b;
+      font-size: 13px;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: #94a3b8;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px 10px;
+        font-size: 14px;
+      }
+
+      .container {
+        padding: 24px 18px;
+        border-radius: 8px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      h2 {
+        margin-top: 26px;
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Hacker Panel</p>
+
+    <p>
+      Hacker Panel is built by Abishek. This Privacy Policy explains
+      how the application accesses, processes, and stores information
+      when you use its features.
+    </p>
+
+    <p>
+      The application is designed to keep your information on your
+      device. It does not operate a backend server to collect your
+      personal data or store your information on our servers.
+      Certain network tools make external requests only when you
+      choose to use them, as explained below.
+    </p>
+
+    <h2>1. Information Stored on Your Device</h2>
+    <p>
+      Hacker Panel stores a limited amount of information locally
+      to provide its features and remember your settings. This
+      information includes:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Preferences:</strong> Theme, accent color, and
+        settings stored in the application's private DataStore.
+      </li>
+      <li>
+        <strong>Event log:</strong> A local audit trail of commands
+        you run, stored in the application's private storage.
+      </li>
+      <li>
+        <strong>Vault entries:</strong> Secrets you choose to save
+        in the vault, stored in an encrypted local file.
+      </li>
+    </ul>
+
+    <p>
+      This information is stored in the application's private
+      storage and is not intentionally transmitted to a server
+      operated by the developer. Under normal Android behavior,
+      this local application data is removed when you uninstall
+      Hacker Panel.
+    </p>
+
+    <h2>2. Information Sent Outside Your Device</h2>
+    <p>
+      Most Hacker Panel features work offline. The Network Workbench
+      makes external network requests only when you explicitly
+      initiate the relevant operation.
+    </p>
+
+    <p><strong>DNS Lookup</strong></p>
+    <p>
+      When you perform a DNS lookup, the application sends the
+      hostname and requested DNS record type to Google's DNS-over-HTTPS
+      service at
+      <a href="https://dns.google/"
+         target="_blank" rel="noopener noreferrer">dns.google</a>.
+      This information is necessary to perform the lookup.
+    </p>
+
+    <p><strong>Port Check</strong></p>
+    <p>
+      When you perform a port check, the application attempts a
+      TCP connection to the host and port you enter. The target
+      host may observe the connection attempt and associated
+      network information, including your public IP address.
+    </p>
+
+    <p><strong>Public IP Address</strong></p>
+    <p>
+      When you request your public IP address, the application
+      contacts
+      <a href="https://api.ipify.org/"
+         target="_blank" rel="noopener noreferrer">api.ipify.org</a>.
+      The service identifies the public IP address from which
+      the request originates and returns it to the application.
+    </p>
+
+    <p><strong>Domain Registration Lookup</strong></p>
+    <p>
+      When you request domain registration information, the
+      application sends the domain name you enter to
+      <a href="https://rdap.org/"
+         target="_blank" rel="noopener noreferrer">rdap.org</a>
+      to retrieve available registration information.
+    </p>
+
+    <p>
+      These services are operated by third parties, not by the
+      developer of Hacker Panel. They may process request data
+      and connection metadata under their own policies. DNS
+      queries may also be visible to your internet service
+      provider and the DNS resolver.
+    </p>
+
+    <p>
+      Other features, including the dashboard, terminal, encoders,
+      hashing lab, password generator, Wi-Fi analyzer, and vault,
+      are designed to work locally without these external lookups.
+    </p>
+
+    <h2>3. Password Vault and Encryption</h2>
+    <p>
+      Hacker Panel includes a local vault where you can store
+      sensitive information. Vault data is encrypted using
+      AES-GCM-256.
+    </p>
+
+    <p>
+      The encryption key is derived from your passphrase using
+      PBKDF2 with 120,000 iterations and a randomly generated salt.
+      The passphrase and derived encryption key are not written
+      to disk by the vault's key-handling process and are not
+      intentionally transmitted outside your device.
+    </p>
+
+    <p>
+      Your vault is excluded from Android backup so that its
+      contents are not copied to cloud backup through the
+      application's configured Android backup process.
+    </p>
+
+    <p>
+      The vault has no recovery mechanism. If you forget your
+      passphrase, you may permanently lose access to the
+      information stored in it. Keep your passphrase safe.
+    </p>
+
+    <h2>4. Permissions</h2>
+    <p>
+      Hacker Panel requests certain Android permissions to
+      provide its network and Wi-Fi features. These include:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Internet access:</strong> Required for network
+        lookups initiated through the Network Workbench.
+      </li>
+      <li>
+        <strong>Network state:</strong> Used to read the current
+        network connection state for the dashboard.
+      </li>
+      <li>
+        <strong>Wi-Fi state:</strong> Used to obtain information
+        about available Wi-Fi networks.
+      </li>
+      <li>
+        <strong>Change Wi-Fi state:</strong> Used to refresh
+        Wi-Fi scan results where supported by Android.
+      </li>
+      <li>
+        <strong>Nearby Wi-Fi devices:</strong> Used for supported
+        Wi-Fi scanning functionality on Android 13 and newer.
+      </li>
+      <li>
+        <strong>Fine location:</strong> Required by certain
+        Android versions, including Android 12 and earlier,
+        to perform Wi-Fi scans.
+      </li>
+    </ul>
+
+    <p>
+      The location permission is used for Wi-Fi scanning and
+      listing nearby networks. Hacker Panel does not use this
+      permission to determine, store, or transmit your geographical
+      location.
+    </p>
+
+    <h2>5. Analytics and Usage Statistics</h2>
+    <p>
+      Hacker Panel does not include a third-party analytics SDK.
+      Anonymous usage statistics are disabled by default. When
+      the statistics setting remains disabled, the application
+      does not collect usage statistics through that feature.
+    </p>
+
+    <p>
+      Information stored in the local event log is used to provide
+      an audit trail of commands you run. It remains in the
+      application's local storage and is not an analytics
+      transmission to the developer.
+    </p>
+
+    <h2>6. Data Sharing</h2>
+    <p>
+      The developer does not operate a server that collects your
+      personal information, and does not intentionally sell or
+      share your locally stored preferences, event log, or vault
+      contents with third parties.
+    </p>
+
+    <p>
+      When you initiate a network lookup, the relevant query or
+      connection attempt is sent to the destination service
+      described in Section 2. Those services process requests
+      independently and may handle the associated information
+      under their own privacy policies.
+    </p>
+
+    <p>
+      Information may also be disclosed if required by applicable
+      law or valid legal process.
+    </p>
+
+    <h2>7. Data Retention and Deletion</h2>
+    <p>
+      Preferences, command logs, and vault entries are stored
+      locally for as long as they are needed by the application
+      or until you remove them.
+    </p>
+
+    <p>
+      You can remove locally stored information by clearing
+      Hacker Panel's application data through Android settings
+      or by uninstalling the application. Clearing application
+      data or uninstalling the application may permanently
+      delete your vault and its contents.
+    </p>
+
+    <p>
+      Information already received by an external network service
+      is subject to that service's own retention and deletion
+      practices. The developer does not control those records.
+    </p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>
+      Hacker Panel is not specifically directed at children.
+      The application is designed to process its information
+      locally and does not operate a server to collect personal
+      data from users.
+    </p>
+
+    <p>
+      If you have concerns about children's use of the application
+      or believe personal information has been provided in a
+      manner that requires attention, please contact the developer
+      through the contact details below.
+    </p>
+
+    <h2>9. Security</h2>
+    <p>
+      Hacker Panel uses Android's private application storage
+      for local information and AES-GCM-256 encryption for
+      vault entries. These measures are intended to help protect
+      your information from unauthorized access.
+    </p>
+
+    <p>
+      No security method can guarantee absolute protection.
+      You are responsible for keeping your device secure and
+      protecting your vault passphrase. If you forget the
+      passphrase, the developer cannot recover the encrypted
+      vault contents for you.
+    </p>
+
+    <h2>10. Third-Party Services</h2>
+    <p>
+      The Network Workbench relies on the following external
+      services for user-initiated lookups:
+    </p>
+
+    <ul>
+      <li>
+        <a href="https://dns.google/"
+           target="_blank" rel="noopener noreferrer">
+          Google Public DNS
+        </a>
+        — DNS-over-HTTPS lookups.
+      </li>
+      <li>
+        <a href="https://api.ipify.org/"
+           target="_blank" rel="noopener noreferrer">
+          ipify
+        </a>
+        — public IP address lookup.
+      </li>
+      <li>
+        <a href="https://rdap.org/"
+           target="_blank" rel="noopener noreferrer">
+          RDAP.org
+        </a>
+        — domain registration lookups.
+      </li>
+    </ul>
+
+    <p>
+      Port checks connect to the host and port you specify.
+      External services and target hosts may receive your
+      request information and network metadata as part of
+      normal communication.
+    </p>
+
+    <h2>11. International Data Processing</h2>
+    <p>
+      When you use external network lookup features, your
+      requests may be processed by services operating outside
+      your country of residence. The processing, storage,
+      and retention of request information by those services
+      are governed by their own policies and applicable laws.
+    </p>
+
+    <h2>12. Changes to This Privacy Policy</h2>
+    <p>
+      This Privacy Policy may be updated when Hacker Panel's
+      features, data practices, or applicable legal requirements
+      change. The updated policy will include a revised date.
+      Significant changes may also be described in the release
+      notes for a new application version.
+    </p>
+
+    <h2>13. Contact Us</h2>
+    <p>
+      If you have questions, concerns, or feedback about this
+      Privacy Policy, please contact the developer through
+      the project's issue tracker.
+    </p>
+
+    <div class="contact">
+      <strong>Hacker Panel</strong><br>
+      Developer: Abishek<br>
+      Project issue tracker:
+      <a href="https://github.com/abishek5225/Hacker-Panel/issues"
+         target="_blank" rel="noopener noreferrer">
+        github.com/abishek5225/Hacker-Panel/issues
+      </a>
+    </div>
+
+    <p class="effective-date">
+      Last updated: October 20, 2026
+    </p>
+
+    <footer>
+      Hacker Panel · Privacy Policy
+    </footer>
+  </main>
+</body>
+</html>
