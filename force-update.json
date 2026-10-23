@@ -14,5 +14,5 @@
   "app.grain.camera": {
     "version_less_than": "1.9",
     "update": true
-  },
+  }
 }
